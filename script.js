@@ -1,8 +1,7 @@
-//run this
-
-const fs = require('fs')
+//example server
 
 //include serverjs
+const fs = require('fs')
 eval(fs.readFileSync('htmlagent/server.js', 'utf8'))
 //----------//
 
@@ -11,4 +10,4 @@ function new_message() {
     sender.send(responses)
 }
 
-setup(5000,"new_message()")
+setup(5000,"new_message()") //setup on localhost:5000 and on-message run: new_message()

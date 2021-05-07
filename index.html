@@ -1,41 +1,25 @@
-<!-- <button onclick="sendmsg('nice')">eyo click me</button>
-<p id="output">click above!</p>
-
-<script src="https://htmlagent-lib.fisharm.repl.co/script.js"></script>
-<script> 
-
-connect(5000)
-
-function onconnect() {
-    sendmsg("wassup")
-}
-
-function onreceive() {
-    document.getElementById("output").innerHTML = "yo I received the word " + rec_data
-}
-
-</script> -->
+<!-- simple client example -->
 
 <input id="input"></input>
 <button onclick="prepnsend()">send your text!</button>
 <p id="output">see what you recieved below: </p>
 
-<script src="https://htmlagent-lib.fisharm.repl.co/script.js"></script>
+<script src="https://htmlagent-lib.fisharm.repl.co/script.js"></script> <!-- Make sure to include this! -->
 
 <script>
-connect(5000)
+connect(5000) //connect to localhost:5000
 
-function prepnsend() {
+function prepnsend() { 
     var send_data = document.getElementById("input").value
-    sendmsg(send_data)
+    sendmsg(send_data) //send data
     document.getElementById("output").innerHTML += (`<br> sent | ${send_data}`)
 }
 
-function onconnect() {
+function onconnect() { //an optional function that will be run on succesfull connection
     document.getElementById("output").innerHTML += ("<br> connected")
 }
 
-function onreceive() {
+function onreceive() { //another optional function that will be run on data receive
     document.getElementById("output").innerHTML += (`<br> received | ${received}`)
 }
 </script>

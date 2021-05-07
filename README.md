@@ -1,5 +1,5 @@
 # Html-agent
-### A useful client-server communication library for combining server-side Node.js and client-side HTML JS
+### A useful client-server communication library for combining server-side Node.js and client-side HTML-JS
 ###### How to Use
 ---
 - Server.js is the main library, the two others are client and server examples

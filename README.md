@@ -5,4 +5,4 @@
 - Server.js is the main library, the two others are client and server examples
 - Make sure to have [fs](https://www.npmjs.com/package/file-system) installed
 - Run Server.js
-- Run a client
+- Run a client, better documentation in the examples

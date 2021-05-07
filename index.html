@@ -1,0 +1,41 @@
+<!-- <button onclick="sendmsg('nice')">eyo click me</button>
+<p id="output">click above!</p>
+
+<script src="https://htmlagent-lib.fisharm.repl.co/script.js"></script>
+<script> 
+
+connect(5000)
+
+function onconnect() {
+    sendmsg("wassup")
+}
+
+function onreceive() {
+    document.getElementById("output").innerHTML = "yo I received the word " + rec_data
+}
+
+</script> -->
+
+<input id="input"></input>
+<button onclick="prepnsend()">send your text!</button>
+<p id="output">see what you recieved below: </p>
+
+<script src="https://htmlagent-lib.fisharm.repl.co/script.js"></script>
+
+<script>
+connect(5000)
+
+function prepnsend() {
+    var send_data = document.getElementById("input").value
+    sendmsg(send_data)
+    document.getElementById("output").innerHTML += (`<br> sent | ${send_data}`)
+}
+
+function onconnect() {
+    document.getElementById("output").innerHTML += ("<br> connected")
+}
+
+function onreceive() {
+    document.getElementById("output").innerHTML += (`<br> received | ${received}`)
+}
+</script>

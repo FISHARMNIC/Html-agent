@@ -1,5 +1,5 @@
 const WebSocket = require('ws')
-const { send } = require('process')
+//const { send } = require('process') if it doenst work include this and download
 
 var agent
 var responses

@@ -5,7 +5,7 @@
 - Server.js is the main library, the two others are client and server examples
 - Make sure to have [fs](https://www.npmjs.com/package/file-system), and [WebSocket](https://www.npmjs.com/package/websocket) installed
 - Run Server.js
-- Run a client, better documentation in the examples
+- Create and run a client, better documentation in the examples
 
 ###### But Why Tho
 ---
